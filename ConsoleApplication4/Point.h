@@ -1,5 +1,5 @@
 #pragma once
-#include <istream>
+#include <iostream>
 
 class Point {
 	friend std::istream& operator>>(std::istream& in, Point& obj);

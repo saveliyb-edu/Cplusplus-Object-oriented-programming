@@ -1,5 +1,5 @@
 #include "Point.h"
-#include "cmath"
+#include <cmath>
 #include <iomanip>
 
 Point::Point() {

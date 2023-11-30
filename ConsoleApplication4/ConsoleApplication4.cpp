@@ -1,90 +1,6 @@
 ﻿#include <iostream>
 #include "Point.h"
 #include "Triangle.h"
-//
-//
-//const std::string ERROR_OPEN_FILE = "Ожидалось число с плавующей точкой";
-//
-//bool inputPoint(Point& point);
-//void outputPoint(Point& point);
-//bool isPointInCircle(double radius, Point& point);
-//bool isEqualSquare(Triangle& triangle1, Triangle& triangle2);
-//void outputTriangle(Triangle& triangle);
-//
-//int main() {
-//	setlocale(LC_ALL, "ru");
-//	Point point1, pointZero(0.0, 0.0);
-//	double minDistance;
-//	if (!inputPoint(point1)) return 0;
-//	Point pointNearest(point1);
-//	minDistance = pointNearest.getDistance(pointZero);
-//	while (point1.getX() != 0 || point1.getY() != 0) {
-//		double distance = point1.getDistance(pointZero);
-//		if (distance < minDistance) {
-//			Point pointNearest(point1);
-//			minDistance = distance;
-//		}
-//		if (!inputPoint(point1)) return 0;
-//	}
-//	outputPoint(pointNearest);
-//
-//
-//	//Point a(4, 5);
-//	//Point b(4, 6);
-//	//Point c(7, 10);
-//	//Triangle tr1(a, b, c);
-//	//outputTriangle(tr1);
-//	//Triangle tr2(c, b, a);
-//	//std::cout << isEqualSquare(tr1, tr2);
-//
-//
-//	return 0;
-//}
-//
-//
-//bool inputPoint(Point& point) {
-//	double x, y;
-//
-//	std::cout << "Введите координаты точки x, y: " << std::endl;
-//	std::cin >> x >> y;
-//	std::cout << std::endl;
-//	if (std::cin.fail()) {
-//		std::cout << "Ожидалось число с плавующей точкой";
-//		return false;
-//	}
-//
-//	point.setX(x);
-//	point.setY(y);
-//
-//	return true;
-//}
-//
-//void outputPoint(Point& point) {
-//	std::cout << "(" << point.getX() << ", " << point.getY() << ")";
-//}
-//
-//bool isPointInCircle(double radius, Point & point) {
-//	Point center(0, 0);
-//	return point.getDistance(center) <= radius;
-//}
-//
-//
-//bool isEqualSquare(Triangle& triangle1, Triangle& triangle2) {
-//	return (triangle1.getSquare() == triangle2.getSquare());
-//}
-//
-//void outputTriangle(Triangle& triangle) {
-//	std::cout << "(";
-//	Point a = triangle.getA(), b = triangle.getB(), c = triangle.getC();
-//	outputPoint(a);
-//	std::cout << "; ";
-//	outputPoint(b);
-//	std::cout << "; ";
-//	outputPoint(c);
-//	std::cout << ")\n";
-//}
-
-
 
 // testPoint.cpp
 #include "Point.h"
@@ -156,10 +72,7 @@ const Point GLOBAL_POINT(1, 1);
 int main()
 {
 	setlocale(LC_ALL, "rus");
-	//testPoint();
-	//testTriangle();
-	Triangle a;
-	std::cin >> a;
-	std::cout << a;
+	testPoint();
+	testTriangle();
 	return 0;
 }
